@@ -1,2 +1,4 @@
-# goit-markup-hw-04
-HW #4
+# goit-markup-hw-03
+
+Homework # 3
+https://hanna-vasylenko.github.io/goit-markup-hw-03/
