@@ -109,7 +109,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+.list {
+  list-style: none;
+}
 /* Site Nav */
 
 .site-nav .link {
@@ -125,18 +127,32 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+
 /* CONTACT LINK */
-.contact .link {
+/* .contact .link {
   color: var(--primary-text-color);
-}
+} */
+
 .contact .link:hover,
 .contact .link:focus {
   color: var(--accent-color);
 }
+/* .contact-list-link {
+  color: var (--primary-text-color);
+  fill: currentColor;
+} */
 
-.list {
-  list-style: none;
+.contact-list-icon {
+  fill: currentColor;
 }
+
+.contact-list-link:hover {
+  color: var(--accent-color);
+}
+
+/* .contact-list-link:hover svg {
+  fill: var(--accent-color);
+} */
 
 .contact.list {
   display: flex;
@@ -145,6 +161,7 @@ body {
 .contact.list .item + .item {
   margin-left: 50px;
 }
+
 /* HERO section */
 
 .hero-section {
@@ -233,36 +250,16 @@ body {
   border-radius: 4px;
 }
 
-.benefits-item::before {
-  content: '';
-  height: 120px;
+.benefits-block {
   display: block;
-  padding: 25px 100px;
-}
-.antenna {
-  background-image: url(../images/svg/antenna.svg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-}
-
-.clock {
-  background-image: url(../images/svg/clock.svg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-}
-.diagram {
-  background-image: url(../images/svg/diagram.svg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-}
-.astronaut {
-  background-image: url(../images/svg/astronaut.svg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  padding: 16px 32px;
 }
 .benefits-subtitle {
   color: var(--title-text-color);
@@ -439,12 +436,10 @@ body {
   width: 170px;
   height: 92px;
   padding: 16px 32px;
-
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
 }
-
 .clients-list-icon {
   fill: #afb1b8;
 }
@@ -456,11 +451,11 @@ body {
   border: 1px solid var(--accent-color);
 }
 
-.clients-list-icon:hover {
+.clients-item:hover svg {
   fill: var(--accent-color);
 }
 
-.clients-list-icon:focus {
+.clients-item:focus svg {
   fill: var(--accent-color);
 }
 
