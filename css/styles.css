@@ -364,7 +364,7 @@ body {
   padding: 20px 24px;
 }
 .card-content {
-  padding: 30px;
+  padding: 30px 30px 16px 30px;
 }
 .team-social-list {
   display: flex;
@@ -379,21 +379,27 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-
+.team-social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
 .team-social-icon {
   fill: #afb1b8;
 }
-
 /* .team-social-icon:hover {
   fill: #ffffff;
 } */
 
 .team-social-link:hover {
   background-color: var(--accent-color);
-  /*fill: #ffffff;*/
 }
 
-.team-social-link:hover .team-social-icon {
+.team-social-link:hover svg {
   fill: #ffffff;
 }
 
@@ -401,10 +407,11 @@ body {
   background-color: var(--accent-color);
 }
 
-/* .team-social-icon:focus {
+.team-social-link:focus svg {
   fill: #ffffff;
-} */
-2 .team-social-item:not(:last-child) {
+}
+
+.team-social-item:not(:last-child) {
   margin-right: 10px;
 }
 /* CLIENTS */
