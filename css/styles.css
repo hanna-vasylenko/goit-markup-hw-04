@@ -129,9 +129,9 @@ body {
 }
 
 /* CONTACT LINK */
-/* .contact .link {
+.contact .link {
   color: var(--primary-text-color);
-} */
+}
 
 .contact .link:hover,
 .contact .link:focus {
