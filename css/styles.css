@@ -458,21 +458,21 @@ body {
 .clients-list-icon {
   fill: #afb1b8;
 }
-.clients-item:hover {
+.clients-link:hover {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
-.clients-item:focus {
+.clients-link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
-.clients-item:hover svg {
+.clients-link:hover svg {
   fill: var(--accent-color);
 }
 
-.clients-item:focus svg {
+.clients-link:focus svg {
   fill: var(--accent-color);
 }
 
